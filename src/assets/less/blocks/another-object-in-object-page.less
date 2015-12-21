@@ -1,0 +1,93 @@
+.b-another-object {
+    .item {
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        width: 50%;
+        height: 450px;
+
+        .info-wrap {
+            display: table;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 450px;
+
+            .blur {
+                position: absolute;
+                width: 100%;
+                height: 450px;
+                .blur(2px);
+                .transition(all);
+
+            }
+
+            .info {
+                .center-position-horizontally(490px, absolute);
+                .center-position-vertically(84px, absolute);
+                display: table-cell;
+                vertical-align: middle;
+                width: 490px;
+                text-align: center;
+                .font(2.4em, @Futura, @white, 1.3, 700);
+                letter-spacing: 0.07em;
+                text-transform: uppercase;
+            }
+
+            .info-small {
+                .center-position-horizontally(420px, absolute);
+                width: 420px;
+                .font(2em, @Futura, @white, 1.4, 700);
+            }
+
+            &:hover {
+                .blur {
+                    .blur(0px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .b-another-object {
+        .item {
+            .info-wrap {
+                .info {
+                    .center-position-horizontally(320px, absolute);
+                    width: 320px;
+                    .font(1.8em, @Futura, @white, 1.3, 700);
+                }
+
+                .info-small {
+                    .center-position-horizontally(320px, absolute);
+                    width: 320px;
+                    .font(1.5em, @Futura, @white, 1.5, 700);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .b-another-object {
+        .item {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .b-another-object {
+        .item {
+            .info-wrap {
+                .info {
+                    .center-position-horizontally(280px, absolute);
+                    width: 280px;
+                    .font(1.4em, @Futura, @white, 1.5, 700);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.b-mission-ibg {
+    width: 100%;
+
+    .inner-mission {
+        .center-position-horizontally(988px, relative);
+        width: 988px;
+        padding: 0 0 90px 0;
+        text-align: center;
+
+        .title {
+            padding: 90px 0 0 0;
+            .font(1.4em, @Futura, #2a3953, 2.1, 700);
+            text-transform: uppercase;
+        }
+
+        .description {
+            .font(1.8em, @Cirice, #2a3953, 1.2, 400);
+        }
+
+        .item-wrap {
+            padding: 50px 0 0 0;
+            text-align: left;
+
+            .item {
+                display: inline-block;
+                vertical-align: top;
+                width: 316px;
+                margin: 0 20px 0 0;
+                text-align: center;
+
+                .description {
+                    display: inline-block;
+                    width: 250px;
+                    padding: 0 0 25px 0;
+                    text-align: left;
+                    .font(1.8em, @Cirice, #fff, 1.4, 400);
+                }
+
+                .button-missing {
+                    display: block;
+                    margin: 0 0 0 27px;
+                    .font(1.8em, @Cirice, #fff, @weight: 800);
+                    border: 2px solid #fff;
+                    text-decoration: none;
+                    .transition(border);
+                    .transition(background);
+
+                    &:hover {
+                        border: 2px solid @blue;
+                        background: @blue;
+                    }
+                }
+
+                ul {
+                    display: inline-block;
+                    width: 257px;
+                    padding: 0 0 0 20px;
+                    text-align: left;
+                    list-style: disc;
+
+                    li {
+                        padding: 0 0 15px 0;
+                        .font(1.8em, @Cirice, #fff, 1.4, 400);
+                    }
+
+                }
+
+                &:last-child {
+                    margin: 0px;
+                    text-align: left;
+
+                    .description {
+                        padding-left: 20px;
+                    }
+
+                    .button-missing {
+                        margin: 0 0 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .b-mission-ibg {
+        width: 100%;
+
+        .inner-mission {
+            left: 0px;
+            margin-left: 0px;
+            width: 100%;
+
+            .item-wrap {
+                text-align: center;
+
+                .item {
+                    margin: 0 0 30px;
+
+                    .description {
+                        text-align: center;
+                    }
+
+                    .inner {
+                        display: inline-block;
+                    }
+
+                    &:last-child {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .description {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .b-mission-ibg {
+        .inner-mission {
+            .item-wrap {
+                .item {
+                    &:last-child {
+                        text-align: left;
+
+                        .description {
+                            padding: 0 0 33px 30px;
+                            text-align: left;
+                        }
+
+                        .inner {
+                            margin: 0 0 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

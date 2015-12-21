@@ -1,0 +1,184 @@
+.b-reconstruction-project {
+    clear: both;
+    padding: 98px 0 0 0;
+
+    .inner {
+        .center-position-horizontally(988px, relative);
+        width: 998px;
+        padding: 0 0 97px 0;
+
+        .title {
+            padding: 0 0 20px 0;
+            .font(3.4em, @Futura, @black, 1.2, 700);
+            letter-spacing: 0.0695em;
+            text-transform: uppercase;
+        }
+
+        .address {
+            padding: 0 0 37px 0;
+            .font(1.6em, @Cirice, #808080, 1.2, 800);
+        }
+
+        .contractor {
+            display: inline-block;
+            vertical-align: top;
+            width: 32%;
+            margin: 0 2% 0 0;
+            padding: 0 30px 0 0;
+
+            .construction {
+                padding: 0 0 10px 0;
+                .font(1.6em, @Cirice, #808080, 1.2, 800);
+            }
+
+            .more {
+                display: inline-block;
+                position: relative;
+                padding: 0 0 20px 0;
+                .font(1.8em, @Cirice, @blue, 1.2, 800);
+
+                .icon {
+                    position: absolute;
+                    right: 3px;
+                    top: 7px;
+                    .icon-arrow-reconstruction();
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .deadline {
+                padding: 0 0 15px 0;
+                .font(1.6em, @Cirice, #808080, 1.2, 800);
+            }
+
+            .data {
+                .font(1.8em, @Cirice, @black, 1.2, 800);
+            }
+        }
+
+        .reconstruction {
+            display: inline-block;
+            vertical-align: top;
+            width: 66%;
+
+            .description {
+                padding: 0 0 37px 0;
+                .font(1.8em, @Cirice, @black, 1.5, 400);
+            }
+
+            .more {
+                display: block;
+                position: relative;
+                padding: 0 0 5px 0;
+                .font(1.8em, @Cirice, @blue, 1.2, 800);
+
+                .icon {
+                    display: inline-block;
+                    margin: 0 0 0 7px;
+                    right: 3px;
+                    top: 7px;
+                    .icon-arrow-reconstruction();
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .b-reconstruction-project {
+
+        .inner {
+            left: 0;
+            width: 100%;
+            margin-left: auto;
+            text-align: center;
+
+            .title {
+                padding-left: 20px;
+                text-align: left;
+            }
+
+            .address {
+                padding-left: 20px;
+                text-align: left;
+            }
+
+            .contractor {
+                padding: 0 0 0 20px;
+                text-align: left;
+
+                .more {
+                    .icon {
+                        background: none;
+                    }
+                }
+            }
+
+            .reconstruction {
+                .description {
+                    padding: 0 20px 25px 25px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .b-reconstruction-project {
+        .inner {
+            .title {
+                text-align: center;
+                .font(2.4em, @Futura, @black, 1.2, 700);
+            }
+
+            .address {
+                text-align: center;
+                .font(1.2em, @Cirice, #808080, 1.2, 800);
+            }
+
+            .contractor {
+                display: inline-block;
+                width: 320px;
+                margin: 0;
+                padding: 0 0 30px 0;
+                text-align: center;
+
+                .more {
+                    .icon {
+                        background: none;
+                    }
+                }
+            }
+
+            .reconstruction {
+                .center-position-horizontally(460px, relative);
+                width: 460px;
+                display: block;
+
+                .description {
+                    padding: 0 20px 25px 25px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .b-reconstruction-project {
+        .inner {
+            .reconstruction {
+                .center-position-horizontally(320px, relative);
+                width: 320px;
+            }
+        }
+    }
+}
